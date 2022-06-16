@@ -260,6 +260,9 @@ header .line{
 
 /* todays picks */
 h2{
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 30px;
     letter-spacing: 5px;
     border-left: 5px solid #ffcc00;
@@ -270,6 +273,7 @@ h2{
 .pick-item{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .pick-item img{
     width: 100px;
@@ -282,5 +286,27 @@ h2{
 
 .pick-item-text p{
     font-weight: 700;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.pick-item h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.seeMore{
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffcc00;
+    text-align: center;
+    
+
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 3px;
+
 }
