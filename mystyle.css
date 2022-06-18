@@ -94,7 +94,7 @@ nav.menu a.link-subscribe{
     font-weight: 700;
     background-color: black;
 
-    padding: 16px 14px 16px 14px;
+    padding: 17px 14px 19px 14px;
 
     box-shadow: inset 0 0 0 0 #ffcc00;
     transition: ease-out 0.3s;
@@ -108,7 +108,7 @@ nav.menu a.link-subscribe:hover{
     box-shadow: inset 100px 0 0 0 #ffcc00;
 }
 .link-arrows{
-
+    color: black;
 }
 /*header*/
 
@@ -174,7 +174,158 @@ header .line{
     border-bottom: solid 5px #ffcc00;
 }
 
+/*pc view menu */
+@media(min-width:768px){
+    .complete-logo{
+        display: block;
+        height: 32px;
+        padding-left: 15px;
+    }
+    .frame-logo{
+        display: none;
+    }
+
+    .link-news{
+        display:inline-block;
+        font-size: 14px;
+        border-bottom: 3px solid #ffcc00;
+        transition: 0.3s;
+        box-shadow: inset 0 0 0 0 #ffcc00;
+    }
+
+    .link-news:hover{
+        background-color: #ffcc00;
+        box-shadow: inset 0 -100px 0 0 #ffcc00;
+    }
+
+    .link-menu{
+        display:inline-block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    .link-search{
+        display: inline-block;
+    }
+
+    nav.menu{
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 49px;
+        display: flex;
+        
+    }
+
+    nav.menu .complete-logo{
+        padding-top: 7px;
+        height: 34px;
+        padding-left: 18px;
+        width: 116px;
+    }
+
+    nav.menu a{
+        color: black;
+        margin-right: 20px;
+    }
+}
+
+/*pc view header */
+@media(min-width:768px){
+    header{
+        background-color: black;
+        font-family: 'Maven Pro', sans-serif;
+        color: white;
+        height: 300px;
+        align-items: center;
+    
+        text-align: center;
+    
+        padding-top: 95px;
+    
+       
+    }
+    
+    header h1{
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        padding-bottom: 23px;
+    }
+    
+    header p, a{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        
+    }
+    
+    header a.subscribe{
+        padding-left: 1px;
+        padding-right: 1px;
+        background: black;
+        background-size: auto;
+        border-bottom:3px solid #ffcc00;
+        color: white;
+        transition: 0.3s;
+        box-shadow: inset 0 0 0 0 #ffcc00;
+    }
+    
+    header a.subscribe:hover{
+        background-color: #ffcc00;
+        
+        color: black;
+        cursor: pointer;
+        box-shadow: inset 0 -100px 0 0 #ffcc00;
+    
+        
+        
+        
+    }
+    
+    
+    
+    header .line{
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65px;
+        border-bottom: solid 5px #ffcc00;
+    }
+}
+
 /*main news*/
+@media(min-width:768px){
+
+    main{
+        position: relative;
+        top: -90px;
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .news-container{
+        width: 800px;
+    }
+    .main-news-img img{
+        height: 400px;
+        width: 100%;
+        transition: 0.8;
+    }
+
+    .main-news-img{
+        overflow: hidden;
+    }
+
+    
+
+}
+
+
 
 .main-news{
     position: relative;
@@ -186,6 +337,7 @@ header .line{
 .main-news-img img{
     height: 400px;
     transition: 0.8;
+    
 }
 
 .main-news-text{
@@ -290,6 +442,11 @@ h2{
     margin-top: 15px;
 }
 
+.pick-item-text p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 .pick-item h3{
     font-size: 15px;
@@ -305,8 +462,92 @@ h2{
 
     width: fit-content;
 
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
+    margin-top: 50px;
     letter-spacing: 3px;
 
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 0 #ffcc00;
+
 }
+
+.seeMore:hover{
+    color: black;
+    box-shadow: inset 0 -100px 0 0 #ffcc00;
+    cursor: pointer;
+}
+
+@media(min-width:2000px){
+    .secondary-news-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    .secondary-news{
+        height: 400px;
+        margin-bottom: 10px;
+        
+        
+    }
+
+    .secondary-news-img{
+        height:230px;
+    }
+
+    .spaceRight{
+        margin-right: 20px;
+    }
+
+    .spaceLeft{
+        margin-left: 20px;
+    }
+
+    .secondary-news-text{
+        padding-bottom: 50px;
+    }
+
+    h2{
+        font-family: 'Maven Pro', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 5px;
+        border-left: 5px solid #ffcc00;
+        padding-left: 20px;
+        margin: 30px 0;
+    }
+    
+    .pick-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .pick-item img{
+        width: 100px;
+        height: 80px;
+    }
+    
+    .pick-item-text{
+        flex-basis: 78%;
+    }
+    
+    .pick-item-text p{
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .pick-item-text p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    
+    .pick-item h3{
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+

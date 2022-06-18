@@ -22,3 +22,50 @@ th{
     background-color: #faf38f;
     font-weight: bold;
 }
+
+/*display flex */
+
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    background-color: gray;
+    height: 300px;
+}
+
+.flex-child{
+    flex-basis: 100px;
+
+    background-color: green;
+    color: lawngreen;
+    border: 1px solid lawngreen;
+    width: fit-content;
+
+    height: 50px;
+}
+
+.grid-container{
+    display: grid;
+    background-color: #dedede;
+    height: 300px;
+
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.grid-child{
+    background-color: gray;
+    border: 1px solid black;
+}
+
+/*mobile first*/
+
+body{
+    background-color: #ffeea1;
+}
+
+@media(min-width:768px){
+    body{
+        background-color: red;
+    }
+}
